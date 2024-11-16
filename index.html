@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore o mundo encantado dos Sylvanian Families!">
+  <title>Sylvanian Families</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Sylvanian Families</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#families" class="nav-link">Famílias</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-content">
+      <h2>Bem-vindo ao Mundo Encantado!</h2>
+      <p>Descubra as adoráveis famílias e seus momentos especiais no mundo Sylvanian.</p>
+      <a href="#families" class="btn">Conheça as Famílias</a>
+    </div>
+  </section>
+
+  <section id="families" class="families">
+    <h2>As Famílias Sylvanian</h2>
+    <div class="family-cards">
+      <div class="family-card" onclick="showFamilyDetails('family1')">
+        <img src="images/family1.jpg" alt="Família dos Coelhos">
+        <p>Família dos Coelhos</p>
+      </div>
+      <div class="family-card" onclick="showFamilyDetails('family2')">
+        <img src="images/family2.jpg" alt="Família dos Ursos">
+        <p>Família dos Ursos</p>
+      </div>
+      <div class="family-card" onclick="showFamilyDetails('family3')">
+        <img src="images/family3.jpg" alt="Família dos Castores">
+        <p>Família dos Castores</p>
+      </div>
+    </div>
+    <div id="family-details" class="family-details">
+      <h3 id="family-name"></h3>
+      <p id="family-description"></p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Sobre os Sylvanian Families</h2>
+    <p>As *Sylvanian Families* são uma coleção de figuras adoráveis que representam animais antropomorfizados vivendo em um mundo cheio de aventuras e encantos. Cada família tem sua própria história e personalidade única!</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Entre em Contato</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu Email" required>
+      <textarea placeholder="Sua Mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sylvanian Families - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
